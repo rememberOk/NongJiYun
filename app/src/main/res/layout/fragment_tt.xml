@@ -128,7 +128,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="36dp"
                 app:animDuration="900"
-                app:gap="2000"/>
+                app:gap="200"/>
         </LinearLayout>
 
     </LinearLayout>

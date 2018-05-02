@@ -136,7 +136,6 @@ public class FirstFragment extends Fragment {
         headAdapter = new ListViewHeadAdapter(null,getActivity());
         lv_list_head.setAdapter(headAdapter);
 
-
         videosAdapter = new GridViewVideoAdapter(getActivity(), null);
         gv_first_video.setAdapter(videosAdapter);
     }

@@ -3,7 +3,6 @@ package com.example.test.Adapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
-
 import com.example.test.R;
 import com.example.test.entity.VerticalBanner;
 import com.taobao.library.BaseBannerAdapter;
