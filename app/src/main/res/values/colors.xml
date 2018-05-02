@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="app_green">#31b75f</color>
+    <color name="app_text">#ffffff</color>
+    <color name="app_view">#d4d4d4</color>
+    <color name="first_head">#de2c2c</color>
+    <color name="tv_black">#434343</color>
+    <color name="first_video">#1e7ab4</color>
+    <color name="text_black">#000000</color>
+
+</resources>

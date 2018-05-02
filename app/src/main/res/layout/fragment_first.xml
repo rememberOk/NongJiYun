@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ft_first"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment.FirstFragment">
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/app_green"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="4"
+                android:background="@drawable/shape"
+                android:hint="@string/first_search" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:src="@drawable/btn_notice" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:src="@drawable/btn_speak_normal" />
+        </LinearLayout>
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.jude.rollviewpager.RollPagerView
+                        android:id="@+id/roll_view_pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        app:rollviewpager_play_delay="3000" />
+
+                    <com.example.test.util.MyGridView
+                        android:id="@+id/gv_menu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/app_text"
+                        android:numColumns="3">
+                    </com.example.test.util.MyGridView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/app_view" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_text"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="2dp"
+                            android:padding="6dp"
+                            android:src="@drawable/first_news" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_weight="8"
+                            android:padding="1dp"
+                            android:text="头条"
+                            android:textColor="@color/first_head"
+                            android:textSize="20dp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:button="@null"
+                            android:text="更多 >>"
+                            android:textColor="@color/text_black"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/app_view" />
+
+                    <com.example.test.util.MyListView
+                        android:id="@+id/lv_list_head"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </com.example.test.util.MyListView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/app_view" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_text"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="2dp"
+                            android:padding="6dp"
+                            android:src="@drawable/first_dynamic" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_weight="8"
+                            android:padding="1dp"
+                            android:text="动态"
+                            android:textColor="@color/app_green"
+                            android:textSize="20dp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:button="@null"
+                            android:text="更多 >>"
+                            android:textColor="@color/text_black"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/app_view" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/app_text"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="2dp"
+                            android:padding="6dp"
+                            android:src="@drawable/first_video" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_weight="8"
+                            android:padding="1dp"
+                            android:text="视频"
+                            android:textColor="@color/first_video"
+                            android:textSize="20dp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:button="@null"
+                            android:text="更多 >>"
+                            android:textColor="@color/text_black"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">农技耘</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- activity_main -->
+    <string name="home_first">首页</string>
+    <string name="home_tt">知识库</string>
+    <string name="home_que">快速提问</string>
+    <string name="home_exc">交流</string>
+    <string name="home_me">我的</string>
+
+    <!-- fragment_first -->
+    <string name="first_search">请输入查询内容</string>
+
+    <!-- fragment_que -->
+    <string name="que_ask">快速提问</string>
+
+    <!-- activity_psw_forget -->
+    <string name="forget_psw">忘记密码</string>
+    <string name="forget_phone">请输入手机号码</string>
+    <string name="forget_get">获取验证码</string>
+    <string name="forget_hint">请输入验证码</string>
+    <string name="forget_btn">下一步</string>
+
+    <!-- activity_psw_new -->
+    <string name="new_psw">重置密码</string>
+    <string name="new_phone">请输入密码</string>
+    <string name="new_again">再次输入密码</string>
+    <string name="new_btn">下一步</string>
+    <string name="new_login">登录密码</string>
+    <string name="new_login_again">密码确认</string>
+
+    <!-- fragment_agricultural_policy -->
+    <string name="policy_title">农业政策</string>
+
+    <!-- activity_register -->
+    <string name="register_title">用户注册</string>
+    <string name="register_user">用 户 名</string>
+    <string name="register_user2">姓名</string>
+    <string name="register_phone">手    机</string>
+    <string name="register_phone_num">手机号码</string>
+    <string name="register_psw">密    码</string>
+    <string name="register_psw2">密码</string>
+    <string name="register_sure_psw">确认密码</string>
+    <string name="register_sure_again">再次输入密码</string>
+
+    <!-- fragment_me -->
+    <string name="me_me">我的</string>
+
+</resources>

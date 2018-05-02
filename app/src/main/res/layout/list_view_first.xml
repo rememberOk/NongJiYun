@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_text">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/iv_first_img"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:src="@drawable/test3" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_head_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20178年江苏乡村旅游节开幕首批精品线路全推出"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_first_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_head_title"
+                android:paddingTop="35dp"
+                android:text="2018-04-30" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_head_title"
+                android:paddingLeft="130dp"
+                android:paddingTop="35dp"
+                android:text="阅读数:" />
+
+            <TextView
+                android:id="@+id/tv_first_read"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_head_title"
+                android:paddingLeft="180dp"
+                android:paddingTop="35dp"
+                android:text="401" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/app_view" />
+
+</LinearLayout>
