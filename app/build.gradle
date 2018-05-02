@@ -37,4 +37,5 @@ dependencies {
     implementation 'org.jetbrains:annotations-java5:15.0'
     implementation 'de.hdodenhof:circleimageview:2.2.0'
     implementation 'com.android.support:gridlayout-v7:27.+'
+    implementation 'com.github.Rowandjj:VerticalBannerView:1.0'
 }

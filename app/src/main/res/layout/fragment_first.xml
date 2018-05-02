@@ -62,6 +62,11 @@
                         android:layout_height="180dp"
                         app:rollviewpager_play_delay="3000" />
 
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="3dip"
+                        android:background="@color/app_view" />
+
                     <com.example.test.util.MyGridView
                         android:id="@+id/gv_menu"
                         android:layout_width="match_parent"
@@ -193,6 +198,14 @@
                             android:textColor="@color/text_black"
                             android:textSize="18dp" />
                     </LinearLayout>
+
+                    <com.example.test.util.MyGridView
+                        android:id="@+id/gv_first_video"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/app_text"
+                        android:numColumns="2">
+                    </com.example.test.util.MyGridView>
 
 
                 </LinearLayout>

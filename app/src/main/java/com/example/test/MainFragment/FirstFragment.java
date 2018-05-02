@@ -14,9 +14,12 @@ import android.widget.ListView;
 
 import com.example.test.Adapter.GridViewAdapter;
 import com.example.test.Activity.FirstMenuActivity;
+import com.example.test.Adapter.GridViewVideoAdapter;
 import com.example.test.Adapter.ListViewHeadAdapter;
 import com.example.test.R;
 import com.example.test.callback.OnListItemComponentsClick;
+import com.example.test.entity.FirstVideo;
+import com.example.test.util.MyGridView;
 import com.jude.rollviewpager.RollPagerView;
 import com.jude.rollviewpager.adapter.StaticPagerAdapter;
 import com.jude.rollviewpager.hintview.ColorPointHintView;
@@ -29,14 +32,15 @@ import java.util.List;
 
 public class FirstFragment extends Fragment {
     private GridView gv_menu;
+    private MyGridView gv_first_video;
     private List<String> gridData;
     private GridViewAdapter adapter;
+    private GridViewVideoAdapter videosAdapter;
     private ListViewHeadAdapter headAdapter;
     private ListView lv_list_head;
     public FirstFragment() {
         // Required empty public constructor
     }
-
     private RefreshLayout refreshLayout;
     private RollPagerView mRollViewPager;
 
@@ -132,11 +136,15 @@ public class FirstFragment extends Fragment {
         headAdapter = new ListViewHeadAdapter(null,getActivity());
         lv_list_head.setAdapter(headAdapter);
 
+
+        videosAdapter = new GridViewVideoAdapter(getActivity(), null);
+        gv_first_video.setAdapter(videosAdapter);
     }
 
     private void initView(View view) {
         gv_menu = view.findViewById(R.id.gv_menu);
         lv_list_head = view.findViewById(R.id.lv_list_head);
+        gv_first_video = view.findViewById(R.id.gv_first_video);
     }
 
     private class TestNormalAdapter extends StaticPagerAdapter {
