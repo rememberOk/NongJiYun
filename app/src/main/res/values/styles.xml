@@ -9,5 +9,8 @@
     </style>
 
 
+    <style name="app_text">
+        <item name="android:textSize">17sp</item>
+    </style>
 
 </resources>

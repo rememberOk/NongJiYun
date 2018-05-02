@@ -113,12 +113,13 @@
                     android:paddingTop="3dp" />
 
                 <TextView
+                    style="@style/app_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="5dp"
                     android:paddingTop="5dp"
-                    android:text="我的收藏" />
+                    android:text="@string/me_collect" />
             </LinearLayout>
 
             <View
@@ -141,6 +142,8 @@
                     android:paddingTop="3dp" />
 
                 <TextView
+                    android:id="@+id/me_integral"
+                    style="@style/app_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
@@ -169,12 +172,13 @@
                     android:paddingTop="3dp" />
 
                 <TextView
+                    style="@style/app_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="5dp"
                     android:paddingTop="5dp"
-                    android:text="积分商城" />
+                    android:text="@string/me_integral" />
             </LinearLayout>
 
         </android.support.v7.widget.GridLayout>
@@ -183,5 +187,162 @@
             android:layout_width="wrap_content"
             android:layout_height="3dip"
             android:background="@color/app_view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="10dp">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.1"
+                android:button="@null"
+                android:drawableLeft="@mipmap/icon_personal_04"
+                android:paddingTop="5dp" />
+
+            <TextView
+                style="@style/app_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="@string/me_day" />
+
+            <TextView
+                android:id="@+id/me_day_login"
+                style="@style/app_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.5"
+                android:paddingTop="5dp"
+                android:text="已签到5天" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="3dip"
+            android:background="@color/app_view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="10dp">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.1"
+                android:button="@null"
+                android:drawableLeft="@mipmap/icon_personal_05"
+                android:paddingTop="5dp" />
+
+            <TextView
+                style="@style/app_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.4"
+                android:paddingTop="5dp"
+                android:text="@string/me_setting" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:paddingTop="5dp"
+                android:text="》" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="3dip"
+            android:background="@color/app_view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="10dp">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.1"
+                android:button="@null"
+                android:drawableLeft="@mipmap/icon_personal_06"
+                android:paddingTop="5dp" />
+
+            <TextView
+                style="@style/app_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.4"
+                android:paddingTop="5dp"
+                android:text="@string/me_ask" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:paddingTop="5dp"
+                android:text="》" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="3dip"
+            android:background="@color/app_view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="10dp">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.1"
+                android:button="@null"
+                android:drawableLeft="@mipmap/icon_personal_07"
+                android:paddingTop="5dp" />
+
+            <TextView
+                style="@style/app_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.4"
+                android:paddingTop="5dp"
+                android:text="@string/me_ans" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:paddingTop="5dp"
+                android:text="》" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="3dip"
+            android:background="@color/app_view" />
     </LinearLayout>
+
 </FrameLayout>
