@@ -16,6 +16,27 @@
     <!-- fragment_que -->
     <string name="que_ask">快速提问</string>
 
+    <!-- fragment_exc -->
+    <string name="exc_ask">交流</string>
+    
+    <!-- fragment_tt -->
+    <string name="tt_title">知识库</string>
+    <string name="tt_varieties">作物品种库</string>
+    <string name="tt_protect">植物保护库</string>
+    <string name="tt_livestock">畜禽品种库</string>
+    <string name="tt_main">主推技术库</string>
+
+
+
+    <!-- activity_login -->
+    <string name="login_phone">请填写注册手机号</string>
+    <string name="login_pass">请输入密码</string>
+    <string name="login_btn1">登录</string>
+    <string name="login_forget">忘记密码？</string>
+    <string name="login_num">还没有账号？</string>
+    <string name="login_btn2">现在注册</string>
+    <string name="login_q">快捷登录</string>
+
     <!-- activity_psw_forget -->
     <string name="forget_psw">忘记密码</string>
     <string name="forget_phone">请输入手机号码</string>
@@ -53,6 +74,13 @@
     <string name="me_setting">系统设置</string>
     <string name="me_ask">我的提问</string>
     <string name="me_ans">我的回答</string>
+
+    <!-- fragment_market -->
+    <string name="market_price">价格行情</string>
+    <string name="market_focus">市场聚焦</string>
+    <string name="market_info">江苏省农产品价格信息</string>
+    <string name="market_tag">》</string>
+
 
 
 </resources>

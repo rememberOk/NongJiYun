@@ -23,9 +23,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="@string/me_me"
+            android:text="@string/tt_main"
             android:textColor="@color/app_text"
-            android:textSize="23dp" />
+            android:textSize="23sp" />
     </LinearLayout>
 
         <LinearLayout
@@ -41,7 +41,7 @@
                 android:gravity="center_horizontal"
                 android:button="@null"
                 android:drawableTop="@mipmap/icon_zuwu"
-                android:text="作物品种库"
+                android:text="@string/tt_varieties"
                 android:paddingTop="3dp" />
 
             <View
@@ -56,7 +56,7 @@
                 android:gravity="center_horizontal"
                 android:button="@null"
                 android:drawableTop="@mipmap/icon_zhibao"
-                android:text="植物保护库"
+                android:text="@string/tt_protect"
                 android:paddingTop="3dp" />
         </LinearLayout>
 
@@ -78,7 +78,7 @@
                 android:gravity="center_horizontal"
                 android:button="@null"
                 android:drawableTop="@mipmap/icon_chuqin"
-                android:text="畜禽品种库"
+                android:text="@string/tt_livestock"
                 android:paddingTop="3dp" />
 
             <View
@@ -93,7 +93,7 @@
                 android:gravity="center_horizontal"
                 android:button="@null"
                 android:drawableTop="@mipmap/icon_zhutui"
-                android:text="主推技术库"
+                android:text="@string/tt_main"
                 android:paddingTop="3dp" />
         </LinearLayout>
 
@@ -101,35 +101,6 @@
             android:layout_width="wrap_content"
             android:layout_height="1dip"
             android:background="@color/app_view" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="5dp"
-                android:text="头条"
-                android:textStyle="bold"/>
-
-            <View
-                android:layout_width="1dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:background="#cccccc"/>
-
-            <com.taobao.library.VerticalBannerView
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/banner"
-                android:layout_width="wrap_content"
-                android:layout_height="36dp"
-                app:animDuration="900"
-                app:gap="200"/>
-        </LinearLayout>
 
     </LinearLayout>
 

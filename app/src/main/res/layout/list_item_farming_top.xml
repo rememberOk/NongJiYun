@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/iv_farming_img"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:src="@drawable/test3" />
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/top">
+
+                <TextView
+                    android:id="@+id/tv_farming_title"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:text="20178年江苏乡村旅"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/radius_tuijian"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="置顶"
+                    android:textSize="16dp"
+                    android:textColor="@color/app_green" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_farming_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top"
+                android:text="20178年江苏乡村旅哼哼哼哼哼哼哼哼哼哼哼哼"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tv_farming_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_farming_body"
+                android:paddingTop="20dp"
+                android:text="2018-04-30" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_farming_body"
+                android:paddingLeft="155dp"
+                android:paddingTop="27dp"
+                android:src="@mipmap/icon_look"/>
+
+            <TextView
+                android:id="@+id/tv_farming_read"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_farming_body"
+                android:paddingLeft="180dp"
+                android:paddingTop="20dp"
+                android:text="401" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/app_view" />
+</LinearLayout>

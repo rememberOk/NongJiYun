@@ -27,7 +27,7 @@
                 android:gravity="center"
                 android:text="@string/me_me"
                 android:textColor="@color/app_text"
-                android:textSize="23dp" />
+                android:textSize="23sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -41,7 +41,7 @@
                 android:layout_height="70dp"
                 android:layout_weight="1"
                 android:paddingBottom="3dp"
-                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
                 android:paddingTop="8dp"
                 android:src="@drawable/test3" />
 
@@ -57,7 +57,7 @@
                     android:layout_height="wrap_content"
                     android:padding="3dp"
                     android:text="欧呦"
-                    android:textSize="20dp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/me_work"
@@ -66,7 +66,7 @@
                     android:layout_below="@+id/me_name"
                     android:padding="5dp"
                     android:text="普通农户"
-                    android:textSize="17dp" />
+                    android:textSize="17sp" />
             </RelativeLayout>
 
             <ImageView
@@ -109,7 +109,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:button="@null"
-                    android:drawableLeft="@mipmap/icon_personal_01"
+                    android:drawableStart="@mipmap/icon_personal_01"
                     android:paddingTop="3dp" />
 
                 <TextView
@@ -117,7 +117,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:paddingTop="5dp"
                     android:text="@string/me_collect" />
             </LinearLayout>
@@ -138,7 +138,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:button="@null"
-                    android:drawableLeft="@mipmap/icon_personal_02"
+                    android:drawableStart="@mipmap/icon_personal_02"
                     android:paddingTop="3dp" />
 
                 <TextView
@@ -147,7 +147,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:paddingTop="5dp"
                     android:text="50积分" />
             </LinearLayout>
@@ -168,7 +168,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:button="@null"
-                    android:drawableLeft="@mipmap/icon_personal_03"
+                    android:drawableStart="@mipmap/icon_personal_03"
                     android:paddingTop="3dp" />
 
                 <TextView
@@ -176,7 +176,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:paddingTop="5dp"
                     android:text="@string/me_integral" />
             </LinearLayout>
@@ -192,7 +192,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="10dp"
-            android:paddingLeft="25dp"
+            android:paddingStart="25dp"
             android:paddingTop="10dp">
 
             <RadioButton
@@ -201,7 +201,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_weight="0.1"
                 android:button="@null"
-                android:drawableLeft="@mipmap/icon_personal_04"
+                android:drawableStart="@mipmap/icon_personal_04"
                 android:paddingTop="5dp" />
 
             <TextView
@@ -219,7 +219,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 android:layout_weight="0.5"
                 android:paddingTop="5dp"
                 android:text="已签到5天" />
@@ -234,7 +234,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="10dp"
-            android:paddingLeft="25dp"
+            android:paddingStart="25dp"
             android:paddingTop="10dp">
 
             <RadioButton
@@ -243,7 +243,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_weight="0.1"
                 android:button="@null"
-                android:drawableLeft="@mipmap/icon_personal_05"
+                android:drawableStart="@mipmap/icon_personal_05"
                 android:paddingTop="5dp" />
 
             <TextView
@@ -272,7 +272,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="10dp"
-            android:paddingLeft="25dp"
+            android:paddingStart="25dp"
             android:paddingTop="10dp">
 
             <RadioButton
@@ -281,7 +281,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_weight="0.1"
                 android:button="@null"
-                android:drawableLeft="@mipmap/icon_personal_06"
+                android:drawableStart="@mipmap/icon_personal_06"
                 android:paddingTop="5dp" />
 
             <TextView
@@ -310,7 +310,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="10dp"
-            android:paddingLeft="25dp"
+            android:paddingStart="25dp"
             android:paddingTop="10dp">
 
             <RadioButton
@@ -319,7 +319,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_weight="0.1"
                 android:button="@null"
-                android:drawableLeft="@mipmap/icon_personal_07"
+                android:drawableStart="@mipmap/icon_personal_07"
                 android:paddingTop="5dp" />
 
             <TextView

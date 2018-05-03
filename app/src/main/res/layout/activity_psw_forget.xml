@@ -15,7 +15,7 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="@string/forget_psw"
-            android:textSize="23dp"
+            android:textSize="23sp"
             android:textColor="@color/app_text" />
     </LinearLayout>
 
@@ -35,7 +35,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignRight="@id/et__forget_phone"
+            android:layout_alignEnd="@id/et__forget_phone"
             android:background="@drawable/btn_radius_green"
             android:text="@string/forget_get"
             android:textColor="@color/app_text" />

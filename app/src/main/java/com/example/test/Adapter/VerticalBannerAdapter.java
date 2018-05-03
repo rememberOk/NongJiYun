@@ -36,6 +36,5 @@ public class VerticalBannerAdapter extends BaseBannerAdapter<VerticalBanner> {
             this.rootView = rootView;
             this.text = rootView.findViewById(R.id.text);
         }
-
     }
 }

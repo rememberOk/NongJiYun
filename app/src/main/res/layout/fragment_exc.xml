@@ -24,8 +24,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="交流"
-            android:textSize="23dp"
+            android:text="@string/exc_ask"
+            android:textSize="23sp"
             android:textColor="@color/app_text" />
     </LinearLayout>
 

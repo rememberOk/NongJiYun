@@ -3,12 +3,109 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/app_text"
     tools:context=".MenuFragment.MarketFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="25dp"
+            android:paddingBottom="10dp">
+            <RadioButton
+                android:id="@+id/list_me_img"
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:button="@null"
+                android:drawableStart="@mipmap/icon_price"
+                android:paddingTop="5dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.4"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="5dp"
+                android:text="@string/market_info"
+                style="@style/app_text" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:paddingTop="5dp"
+                android:layout_height="wrap_content"
+                android:text="@string/market_tag"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="3dip"
+            android:background="@color/app_view" />
+        <RadioGroup
+            android:id="@+id/rg_group_market"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <RadioButton
+                android:id="@+id/rb_price"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/market_price"
+                android:textColor="@drawable/exchange_text_color"
+                android:button="@null"
+                android:gravity="center"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="@color/app_view" />
+
+            <RadioButton
+                android:id="@+id/rb_focus"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/market_focus"
+                android:button="@null"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@drawable/exchange_text_color" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="3dip"
+            android:background="@color/app_view" />
+
+        <FrameLayout
+            android:id="@+id/ft_market"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </FrameLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="3dip"
+            android:background="@color/app_view" />
+
+    </LinearLayout>
 
 </FrameLayout>

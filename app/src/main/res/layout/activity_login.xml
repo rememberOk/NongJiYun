@@ -54,7 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@null"
-                android:hint="请填写注册手机号"
+                android:hint="@string/login_phone"
                 android:paddingLeft="10dp" />
         </LinearLayout>
 
@@ -80,7 +80,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@null"
-                android:hint="请输入密码"
+                android:hint="@string/login_pass"
                 android:paddingLeft="10dp" />
         </LinearLayout>
 
@@ -101,7 +101,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/btn_radius_green"
-                android:text="登录"
+                android:text="@string/login_btn1"
                 android:textColor="@color/app_text"
                 android:textSize="20dp" />
         </RelativeLayout>
@@ -118,59 +118,60 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
-                android:text="忘记密码？"
+                android:text="@string/login_forget"
                 android:textColor="@color/app_text" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="还没有账号？"
+                android:text="@string/login_num"
                 android:textColor="@color/app_text" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/btn_radius_black"
-                android:text="现在注册"
+                android:text="@string/login_btn2"
                 android:textColor="@color/app_green" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_marginTop="5dp"
-            android:layout_height="wrap_content"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:orientation="horizontal">
+
             <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
-                android:background="#99CC99"
-                android:layout_height="1dp"
-                android:layout_width="0dp"/>
+                android:background="#99CC99" />
+
             <TextView
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
                 android:layout_width="0dp"
-                android:textColor="#fff"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:gravity="center"
                 android:paddingLeft="2dp"
                 android:paddingRight="2dp"
-                android:text="快捷登录"
-                />
+                android:text="@string/login_q"
+                android:textColor="#fff" />
+
             <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
                 android:layout_marginRight="30dp"
-                android:background="#99CC99"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
-                android:layout_height="1dp"
-                android:layout_width="0dp" />
+                android:background="#99CC99" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"

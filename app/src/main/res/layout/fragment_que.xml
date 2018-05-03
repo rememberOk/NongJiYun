@@ -23,31 +23,37 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="@string/que_ask"
-                android:textSize="23dp"
-                android:textColor="@color/app_text" />
+                android:textColor="@color/app_text"
+                android:textSize="23sp" />
         </LinearLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
-            android:paddingBottom="8dp">
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/que_ask"
-            android:textSize="20dp"
-            android:background="@drawable/btn_radius_green"
-            android:textColor="@color/app_text" />
+            android:paddingTop="8dp">
 
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_radius_green"
+                android:text="@string/que_ask"
+                android:textColor="@color/app_text"
+                android:textSize="20sp" />
         </RelativeLayout>
 
-        <ListView
-            android:id="@+id/lv_que_item"
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/refresh"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-        </ListView>
+
+            <ListView
+                android:id="@+id/lv_que_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
     </LinearLayout>
 </FrameLayout>

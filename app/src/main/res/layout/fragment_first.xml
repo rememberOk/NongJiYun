@@ -156,6 +156,41 @@
                             android:textSize="18dp" />
                     </LinearLayout>
 
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/app_view" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:background="@color/app_text">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:text="头条"
+                            android:textStyle="bold"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="#cccccc"/>
+
+                        <com.taobao.library.VerticalBannerView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/first_banner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dp"
+                            app:animDuration="900"
+                            app:gap="200"/>
+                    </LinearLayout>
+
 
                     <View
                         android:layout_width="match_parent"
@@ -193,6 +228,11 @@
                             android:textColor="@color/text_black"
                             android:textSize="18dp" />
                     </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/app_view" />
 
                     <com.example.test.util.MyGridView
                         android:id="@+id/gv_first_video"
