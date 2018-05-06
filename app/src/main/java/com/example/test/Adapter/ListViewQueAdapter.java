@@ -54,9 +54,9 @@ public class ListViewQueAdapter extends BaseAdapter {
         holder.tv_que_author.setText("小猪佩奇");
         holder.tv_que_self_addr.setText("江苏省南京市栖霞区东东嘻嘻");
         holder.tv_que_article.setText("嗯....我们来讨论一下恩恩恩恩嫩恩呢呢，我也不知道说什么课哈哈哈哈");
-        holder.iv_que_body_img1.setImageResource(R.drawable.test3);
-        holder.iv_que_body_img2.setImageResource(R.drawable.test3);
-        holder.iv_que_body_img3.setImageResource(R.drawable.test3);
+        holder.iv_que_body_img1.setImageResource(R.drawable.test4);
+        holder.iv_que_body_img2.setImageResource(R.drawable.test4);
+        holder.iv_que_body_img3.setImageResource(R.drawable.test4);
         holder.tv_que_body_addr.setText("江苏省南京市浦口区咚咚咚能够");
         holder.tv_que_date.setText("2018-04-21 14:22");
         holder.tv_que_like.setText("200");

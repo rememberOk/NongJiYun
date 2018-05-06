@@ -25,7 +25,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".Activity.FirstMenuActivity" />
-        <activity android:name=".Activity.LoginActivity"></activity>
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.LoginForgetActivity" />
+        <activity android:name=".Activity.LoginNewActivity" />
+        <activity android:name=".Activity.RegisterActivity"/>
     </application>
 
 </manifest>

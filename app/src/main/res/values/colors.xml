@@ -10,5 +10,6 @@
     <color name="tv_black">#434343</color>
     <color name="first_video">#1e7ab4</color>
     <color name="text_black">#000000</color>
+    <color name="app_text_black">#b1b1b1</color>
 
 </resources>

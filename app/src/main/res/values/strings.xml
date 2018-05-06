@@ -15,17 +15,21 @@
 
     <!-- fragment_que -->
     <string name="que_ask">快速提问</string>
+    <string name="que_type">选择类型</string>
+    <string name="que_hint">上传图片或15秒微视频（最多9张图片）</string>
+    <string name="que_photo">图片</string>
+    <string name="que_video">视频</string>
+    <string name="que_submit">提交</string>
 
     <!-- fragment_exc -->
     <string name="exc_ask">交流</string>
-    
+
     <!-- fragment_tt -->
     <string name="tt_title">知识库</string>
     <string name="tt_varieties">作物品种库</string>
     <string name="tt_protect">植物保护库</string>
     <string name="tt_livestock">畜禽品种库</string>
     <string name="tt_main">主推技术库</string>
-
 
 
     <!-- activity_login -->
@@ -80,7 +84,6 @@
     <string name="market_focus">市场聚焦</string>
     <string name="market_info">江苏省农产品价格信息</string>
     <string name="market_tag">》</string>
-
 
 
 </resources>

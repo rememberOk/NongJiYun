@@ -15,8 +15,7 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="@string/new_psw"
-            android:textSize="23sp"
-            android:textColor="@color/app_text"/>
+            style="@style/app_top_title"/>
     </LinearLayout>
 
     <LinearLayout
@@ -29,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/new_login"
-            android:textSize="20sp" />
+            android:textSize="17sp" />
 
         <EditText
             android:id="@+id/et__forget_phone"
@@ -54,7 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/new_login_again"
-            android:textSize="20sp" />
+            android:textSize="17sp" />
 
         <EditText
             android:id="@+id/et__new_again"

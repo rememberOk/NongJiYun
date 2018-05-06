@@ -9,6 +9,12 @@
     </style>
 
 
+    <style name="app_top_title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/app_text</item>
+        <item name="android:gravity">center</item>
+    </style>
+
     <style name="app_text">
         <item name="android:textSize">17sp</item>
     </style>

@@ -12,12 +12,10 @@
         android:layout_height="match_parent"
         android:orientation="vertical" >
 
-
         <ListView
             android:id="@+id/lv_list_farming"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
         </ListView>
 
     </LinearLayout>

@@ -32,14 +32,14 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:padding="12dp"
-                android:src="@drawable/btn_notice" />
+                android:src="@mipmap/btn_notice" />
 
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:padding="12dp"
-                android:src="@drawable/btn_speak_normal" />
+                android:src="@mipmap/btn_speak_normal" />
         </LinearLayout>
 
         <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -60,7 +60,7 @@
                         android:id="@+id/roll_view_pager"
                         android:layout_width="match_parent"
                         android:layout_height="180dp"
-                        app:rollviewpager_play_delay="3000" />
+                        app:rollviewpager_play_delay="30000" />
 
                     <com.example.test.util.MyGridView
                         android:id="@+id/gv_menu"
@@ -87,7 +87,7 @@
                             android:layout_height="35dp"
                             android:layout_marginTop="2dp"
                             android:padding="6dp"
-                            android:src="@drawable/first_news" />
+                            android:src="@mipmap/first_news" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -136,7 +136,7 @@
                             android:layout_height="35dp"
                             android:layout_marginTop="2dp"
                             android:padding="6dp"
-                            android:src="@drawable/first_dynamic" />
+                            android:src="@mipmap/first_dynamic" />
 
                         <TextView
                             android:layout_width="0dp"
@@ -209,7 +209,7 @@
                             android:layout_height="35dp"
                             android:layout_marginTop="2dp"
                             android:padding="6dp"
-                            android:src="@drawable/first_video" />
+                            android:src="@mipmap/first_video" />
 
                         <TextView
                             android:layout_width="0dp"

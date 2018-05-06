@@ -5,43 +5,56 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/app_text"
     tools:context=".Activity.MainActivity">
 
     <FrameLayout
         android:id="@+id/ft_exchange"
-        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="0dp">
+        android:layout_height="0dp"
+        android:layout_weight="1">
     </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="@color/app_green"/>
     <RadioGroup
         android:id="@+id/rg_bt_group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="9dp">
         <RadioButton
             android:id="@+id/rb_first"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="@string/home_first"
+            android:textSize="13sp"
+            android:checked="true"
             android:button="@null"
             android:gravity="center"
             android:drawableTop="@drawable/selector_index" />
+
         <RadioButton
             android:id="@+id/rb_tt"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="@string/home_tt"
+            android:textSize="13sp"
             android:button="@null"
             android:gravity="center"
+            android:paddingRight="5dp"
             android:drawableTop="@drawable/selector_tt"/>
         <RadioButton
             android:id="@+id/rg_qes"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="@string/home_que"
+            android:textSize="13sp"
             android:button="@null"
             android:gravity="center"
             android:drawableTop="@drawable/selector_qes"/>
@@ -49,19 +62,23 @@
             android:id="@+id/rg_exc"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="@string/home_exc"
+            android:textSize="13sp"
+            android:paddingLeft="10dp"
             android:button="@null"
             android:gravity="center"
             android:drawableTop="@drawable/selector_exc"/>
+
         <RadioButton
             android:id="@+id/rg_me"
             android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="@string/home_me"
             android:button="@null"
+            android:drawableTop="@drawable/selector_me"
             android:gravity="center"
-            android:drawableTop="@drawable/selector_me"/>
+            android:text="@string/home_me"
+            android:textSize="13sp" />
     </RadioGroup>
 </LinearLayout>

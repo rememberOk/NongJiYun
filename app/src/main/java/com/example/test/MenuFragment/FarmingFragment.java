@@ -3,6 +3,7 @@ package com.example.test.MenuFragment;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,9 +34,15 @@ public class FarmingFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_farming, container, false);
         initView(view);
 
-        farmingAdapter = new ListViewFarmingAdapter(null);
+
+        farmingAdapter = new ListViewFarmingAdapter(getActivity());
         lv_list_farming.setAdapter(farmingAdapter);
         return view;
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
     }
 
     private void initView(View view) {

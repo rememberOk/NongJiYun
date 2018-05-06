@@ -49,7 +49,7 @@ public class ListViewHeadAdapter extends BaseAdapter {
             holder = (ViewHolder) view.getTag();
         }
         holder.iv_first_img.setImageResource(R.drawable.test3);
-        holder.tv_head_title.setText("20178年江苏乡村旅游节开幕首批精品线路全推出");
+        holder.tv_head_title.setText("20178年江苏乡村旅游节开幕首批精品线路");
         holder.tv_first_date.setText("2018-04-30");
         holder.tv_first_read.setText("401");
         return view;

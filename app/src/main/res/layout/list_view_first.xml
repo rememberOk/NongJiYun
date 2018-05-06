@@ -6,52 +6,88 @@
     android:background="@color/app_text">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="15dp">
+        android:padding="10dp">
 
         <ImageView
             android:id="@+id/iv_first_img"
-            android:layout_width="150dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:padding="3dp"
             android:src="@drawable/test3" />
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tv_head_title"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="20178年江苏乡村旅游节开幕首批精品线路全推出"
-                android:textSize="18dp" />
+                android:orientation="horizontal"
+                android:padding="2dp">
 
-            <TextView
-                android:id="@+id/tv_first_date"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_head_title"
-                android:paddingTop="35dp"
-                android:text="2018-04-30" />
+                <TextView
+                    android:id="@+id/tv_head_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:padding="3dp"
+                    android:text="20178年江苏嗯嗯嗯嗯恩恩恩恩恩恩恩恩恩.."
+                    android:textSize="18dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_head_title"
-                android:paddingLeft="130dp"
-                android:paddingTop="35dp"
-                android:text="阅读数:" />
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/tv_first_read"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_head_title"
-                android:paddingLeft="180dp"
-                android:paddingTop="35dp"
-                android:text="401" />
-        </RelativeLayout>
+                android:orientation="horizontal"
+                android:padding="2dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3">
+
+                    <ImageView
+                        android:id="@+id/icon_look"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="8dp"
+                        android:src="@mipmap/icon_look" />
+
+                    <TextView
+                        android:id="@+id/tv_first_read"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/icon_look"
+                        android:padding="5dp"
+                        android:text="500"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_first_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:text="2018-04-28"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+            </LinearLayout>
+
+        </LinearLayout>
 
     </LinearLayout>
 

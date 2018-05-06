@@ -6,7 +6,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
+import com.example.test.Adapter.ListViewFocusAdapter;
 import com.example.test.R;
 
 /**
@@ -14,6 +16,8 @@ import com.example.test.R;
  */
 public class MarketFocusFragment extends Fragment {
 
+    private ListViewFocusAdapter focusAdapter;
+    private ListView lv_list_focus;
 
     public MarketFocusFragment() {
         // Required empty public constructor
@@ -24,7 +28,15 @@ public class MarketFocusFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_market_focus, container, false);
+        View view = inflater.inflate(R.layout.fragment_market_focus, container, false);
+        initView(view);
+
+        focusAdapter = new ListViewFocusAdapter(getActivity(),null);
+        lv_list_focus.setAdapter(focusAdapter);
+        return view;
     }
 
+    private void initView(View view) {
+        lv_list_focus = (ListView) view.findViewById(R.id.lv_list_focus);
+    }
 }

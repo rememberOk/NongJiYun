@@ -2,8 +2,7 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/app_green">
+    android:orientation="vertical">
 
 
     <LinearLayout
@@ -12,16 +11,11 @@
         android:orientation="vertical" >
 
         <ListView
-            android:id="@+id/lv_list_policy_one"
+            android:id="@+id/lv_list_price"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
         </ListView>
 
-        <ListView
-            android:id="@+id/lv_list_policy_two"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        </ListView>
     </LinearLayout>
 
 </LinearLayout>

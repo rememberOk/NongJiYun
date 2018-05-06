@@ -11,6 +11,7 @@
     <!-- TODO: Update blank fragment layout -->
 
     <LinearLayout
+        android:id="@+id/me_login"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -24,13 +25,12 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center"
                 android:text="@string/me_me"
-                android:textColor="@color/app_text"
-                android:textSize="23sp" />
+                style="@style/app_top_title" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/me_true_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -49,7 +49,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:padding="3dp">
+                android:padding="3dp"
+                android:layout_gravity="center_vertical">
 
                 <TextView
                     android:id="@+id/me_name"
@@ -57,7 +58,7 @@
                     android:layout_height="wrap_content"
                     android:padding="3dp"
                     android:text="欧呦"
-                    android:textSize="20sp" />
+                    android:textSize="17sp" />
 
                 <TextView
                     android:id="@+id/me_work"
@@ -66,7 +67,7 @@
                     android:layout_below="@+id/me_name"
                     android:padding="5dp"
                     android:text="普通农户"
-                    android:textSize="17sp" />
+                    android:textSize="14sp" />
             </RelativeLayout>
 
             <ImageView
@@ -78,7 +79,6 @@
                 android:src="@drawable/test" />
 
             <RadioButton
-                android:id="@+id/me_info"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -86,6 +86,45 @@
                 android:layout_weight="0.3"
                 android:button="@null"
                 android:drawableTop="@mipmap/btn_into_pressed" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/me_no_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:paddingBottom="3dp"
+                android:paddingStart="10dp"
+                android:paddingTop="8dp"
+                android:src="@drawable/icon_head" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:padding="3dp"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="点击登录"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:padding="3dp" />
 
         </LinearLayout>
 
@@ -99,6 +138,7 @@
             android:layout_height="50dp">
 
             <LinearLayout
+                android:id="@+id/me_collect"
                 android:gravity="center"
                 android:orientation="horizontal"
                 app:layout_columnWeight="1"
@@ -113,13 +153,13 @@
                     android:paddingTop="3dp" />
 
                 <TextView
-                    style="@style/app_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginStart="5dp"
                     android:paddingTop="5dp"
-                    android:text="@string/me_collect" />
+                    android:text="@string/me_collect"
+                    android:textSize="14sp"/>
             </LinearLayout>
 
             <View
@@ -128,6 +168,7 @@
                 android:background="@color/app_view" />
 
             <LinearLayout
+                android:id="@+id/me_integral"
                 android:gravity="center"
                 android:orientation="horizontal"
                 app:layout_columnWeight="1"
@@ -142,14 +183,13 @@
                     android:paddingTop="3dp" />
 
                 <TextView
-                    android:id="@+id/me_integral"
-                    style="@style/app_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginStart="5dp"
                     android:paddingTop="5dp"
-                    android:text="50积分" />
+                    android:text="50积分"
+                    android:textSize="14sp" />
             </LinearLayout>
 
             <View
@@ -158,6 +198,7 @@
                 android:background="@color/app_view" />
 
             <LinearLayout
+                android:id="@+id/me_shop"
                 android:gravity="center"
                 android:orientation="horizontal"
                 app:layout_columnWeight="1"
@@ -172,13 +213,13 @@
                     android:paddingTop="3dp" />
 
                 <TextView
-                    style="@style/app_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginStart="5dp"
                     android:paddingTop="5dp"
-                    android:text="@string/me_integral" />
+                    android:text="@string/me_integral"
+                    android:textSize="14sp" />
             </LinearLayout>
 
         </android.support.v7.widget.GridLayout>
@@ -189,6 +230,7 @@
             android:background="@color/app_view" />
 
         <LinearLayout
+            android:id="@+id/me_sign"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="10dp"
@@ -211,7 +253,8 @@
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1"
                 android:paddingTop="5dp"
-                android:text="@string/me_day" />
+                android:text="@string/me_day"
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/me_day_login"
@@ -222,7 +265,8 @@
                 android:layout_marginStart="10dp"
                 android:layout_weight="0.5"
                 android:paddingTop="5dp"
-                android:text="已签到5天" />
+                android:text="已签到5天"
+                android:textSize="14sp" />
         </LinearLayout>
 
         <View
@@ -231,6 +275,7 @@
             android:background="@color/app_view" />
 
         <LinearLayout
+            android:id="@+id/me_setting"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="10dp"
@@ -253,7 +298,8 @@
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1.4"
                 android:paddingTop="5dp"
-                android:text="@string/me_setting" />
+                android:text="@string/me_setting"
+                android:textSize="14sp" />
 
             <TextView
                 android:layout_width="0dp"
@@ -269,6 +315,7 @@
             android:background="@color/app_view" />
 
         <LinearLayout
+            android:id="@+id/me_ask"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="10dp"
@@ -291,7 +338,8 @@
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1.4"
                 android:paddingTop="5dp"
-                android:text="@string/me_ask" />
+                android:text="@string/me_ask"
+                android:textSize="14sp" />
 
             <TextView
                 android:layout_width="0dp"
@@ -307,6 +355,7 @@
             android:background="@color/app_view" />
 
         <LinearLayout
+            android:id="@+id/me_answer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="10dp"
@@ -329,7 +378,8 @@
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1.4"
                 android:paddingTop="5dp"
-                android:text="@string/me_ans" />
+                android:text="@string/me_ans"
+                android:textSize="14sp" />
 
             <TextView
                 android:layout_width="0dp"

@@ -15,8 +15,7 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="@string/forget_psw"
-            android:textSize="23sp"
-            android:textColor="@color/app_text" />
+            style="@style/app_top_title" />
     </LinearLayout>
 
     <RelativeLayout
