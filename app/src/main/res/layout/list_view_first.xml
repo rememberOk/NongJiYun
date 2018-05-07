@@ -2,8 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/app_text">
+    android:background="@color/app_text"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,17 +35,19 @@
                     android:layout_weight="4"
                     android:padding="3dp"
                     android:text="20178年江苏嗯嗯嗯嗯恩恩恩恩恩恩恩恩恩.."
+                    android:textColor="#000000"
                     android:textSize="18dp" />
-
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_marginTop="5dp"
                 android:padding="2dp">
 
                 <RelativeLayout
+
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="3">
@@ -76,15 +78,6 @@
                     android:padding="5dp"
                     android:text="2018-04-28"
                     android:textSize="14sp" />
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="5dp">
-
             </LinearLayout>
 
         </LinearLayout>

@@ -58,6 +58,7 @@
                     android:layout_height="wrap_content"
                     android:padding="3dp"
                     android:text="欧呦"
+                    android:textColor="#000000"
                     android:textSize="17sp" />
 
                 <TextView
@@ -159,6 +160,7 @@
                     android:layout_marginStart="5dp"
                     android:paddingTop="5dp"
                     android:text="@string/me_collect"
+                    android:textColor="#000000"
                     android:textSize="14sp"/>
             </LinearLayout>
 
@@ -189,6 +191,7 @@
                     android:layout_marginStart="5dp"
                     android:paddingTop="5dp"
                     android:text="50积分"
+                    android:textColor="#000000"
                     android:textSize="14sp" />
             </LinearLayout>
 
@@ -219,6 +222,7 @@
                     android:layout_marginStart="5dp"
                     android:paddingTop="5dp"
                     android:text="@string/me_integral"
+                    android:textColor="#000000"
                     android:textSize="14sp" />
             </LinearLayout>
 
@@ -254,6 +258,7 @@
                 android:layout_weight="1"
                 android:paddingTop="5dp"
                 android:text="@string/me_day"
+                android:textColor="#000000"
                 android:textSize="14sp" />
 
             <TextView
@@ -299,6 +304,7 @@
                 android:layout_weight="1.4"
                 android:paddingTop="5dp"
                 android:text="@string/me_setting"
+                android:textColor="#000000"
                 android:textSize="14sp" />
 
             <TextView
@@ -339,6 +345,7 @@
                 android:layout_weight="1.4"
                 android:paddingTop="5dp"
                 android:text="@string/me_ask"
+                android:textColor="#000000"
                 android:textSize="14sp" />
 
             <TextView
@@ -379,6 +386,7 @@
                 android:layout_weight="1.4"
                 android:paddingTop="5dp"
                 android:text="@string/me_ans"
+                android:textColor="#000000"
                 android:textSize="14sp" />
 
             <TextView

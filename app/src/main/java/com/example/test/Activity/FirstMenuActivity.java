@@ -3,8 +3,11 @@ package com.example.test.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.test.MainFragment.FirstFragment;
 import com.example.test.MenuFragment.AgriculturalPolicyFragment;
 import com.example.test.MenuFragment.BrandAgriculturalFragment;
 import com.example.test.MenuFragment.CooperationFragment;
@@ -18,6 +21,7 @@ import com.example.test.R;
 public class FirstMenuActivity extends AppCompatActivity {
 
     private TextView tv_content_title;
+    private ImageView menu_back_first;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,9 +72,18 @@ public class FirstMenuActivity extends AppCompatActivity {
                         new CooperationFragment()).commit();
                 break;
         }
+
+        menu_back_first.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
     }
 
     private void initView() {
         tv_content_title = findViewById(R.id.tv_content_title);
+        menu_back_first = findViewById(R.id.menu_back_first);
     }
 }

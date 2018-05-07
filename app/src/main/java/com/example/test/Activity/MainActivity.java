@@ -11,7 +11,6 @@ import com.example.test.MainFragment.QueFragment;
 import com.example.test.MainFragment.TtFragment;
 import com.example.test.R;
 
-
 public class MainActivity extends AppCompatActivity {
 
     private RadioGroup rg_bt_group;

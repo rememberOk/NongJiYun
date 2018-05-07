@@ -16,6 +16,8 @@ import com.example.test.Activity.LoginActivity;
 import com.example.test.R;
 import com.example.test.entity.User;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -42,6 +44,7 @@ public class MeFragment extends Fragment {
     private LinearLayout me_ask;
     private LinearLayout me_answer;
     private LinearLayout me_login;
+    private List<User> listUser;
 
     public MeFragment() {
         // Required empty public constructor
@@ -55,7 +58,10 @@ public class MeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_me, container, false);
         initView(view);
 
+        listUser = new ArrayList<>();
+
         user = new User();
+
         if (TextUtils.isEmpty(user.getUserName())) {
             me_true_login.setVisibility(View.GONE);
         } else {

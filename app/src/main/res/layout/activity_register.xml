@@ -234,6 +234,7 @@
         android:background="@color/app_view" />
 
     <LinearLayout
+        android:id="@+id/register_type"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:orientation="horizontal"
@@ -284,9 +285,15 @@
             android:gravity="end">
 
             <TextView
+                android:id="@+id/register_type_info"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="选择类型  >" />
+                android:text="选择类型"/>
+            <TextView
+                android:paddingStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=">" />
         </LinearLayout>
 
     </LinearLayout>

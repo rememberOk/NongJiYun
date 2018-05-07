@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#e6e6e6"
     android:orientation="vertical">
 
     <LinearLayout
@@ -14,6 +15,14 @@
             android:layout_height="50dp"
             android:background="@color/app_green"
             android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ask_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/btn_back_normal" />
 
             <TextView
                 android:layout_width="match_parent"

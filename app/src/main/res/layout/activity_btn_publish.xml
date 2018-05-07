@@ -2,6 +2,7 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#e6e6e6"
     android:orientation="vertical">
 
     <LinearLayout
@@ -11,8 +12,9 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:paddingTop="10dp"
-            android:paddingLeft="10dp"
+            android:id="@+id/publish_return"
+            android:paddingStart="10dp"
+            android:layout_gravity="center_vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@mipmap/btn_back_normal" />
@@ -34,7 +36,7 @@
 
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="170dp"
             android:background="@color/app_text" />
     </LinearLayout>
 
