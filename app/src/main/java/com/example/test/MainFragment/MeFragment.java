@@ -12,12 +12,11 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.test.Activity.InfoMeActivity;
 import com.example.test.Activity.LoginActivity;
 import com.example.test.R;
 import com.example.test.entity.User;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -26,7 +25,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class MeFragment extends Fragment {
+public class MeFragment extends Fragment implements View.OnClickListener {
 
     private User user;
     private CircleImageView me_head_img;
@@ -44,7 +43,6 @@ public class MeFragment extends Fragment {
     private LinearLayout me_ask;
     private LinearLayout me_answer;
     private LinearLayout me_login;
-    private List<User> listUser;
 
     public MeFragment() {
         // Required empty public constructor
@@ -57,25 +55,14 @@ public class MeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_me, container, false);
         initView(view);
-
-        listUser = new ArrayList<>();
-
         user = new User();
-
+        user.setUserName("啊哈");
         if (TextUtils.isEmpty(user.getUserName())) {
             me_true_login.setVisibility(View.GONE);
         } else {
             me_no_login.setVisibility(View.GONE);
+            me_name.setText(user.getUserName());
         }
-//        未登录
-        me_no_login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent();
-                intent.setClass(Objects.requireNonNull(getActivity()),LoginActivity.class);
-                startActivity(intent);
-            }
-        });
         return view;
     }
 
@@ -95,5 +82,23 @@ public class MeFragment extends Fragment {
         me_ask = view.findViewById(R.id.me_ask);
         me_answer = view.findViewById(R.id.me_answer);
         me_login = view.findViewById(R.id.me_login);
+        me_no_login.setOnClickListener(this);
+        me_true_login.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.me_no_login:
+                Intent intent = new Intent();
+                intent.setClass(Objects.requireNonNull(getActivity()), LoginActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.me_true_login:
+                Intent intentT = new Intent();
+                intentT.setClass(Objects.requireNonNull(getActivity()), InfoMeActivity.class);
+                startActivity(intentT);
+                break;
+        }
     }
 }

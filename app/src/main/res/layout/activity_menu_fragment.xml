@@ -17,8 +17,8 @@
             android:id="@+id/menu_back_first"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="10dp"
             android:paddingStart="10dp"
+            android:layout_gravity="center_vertical"
             android:src="@mipmap/btn_back_normal" />
         <TextView
             android:id="@+id/tv_content_title"
@@ -26,8 +26,7 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="@string/policy_title"
-            android:textSize="23dp"
-            android:textColor="@color/app_text" />
+            style="@style/app_top_title" />
     </LinearLayout>
 
     <FrameLayout

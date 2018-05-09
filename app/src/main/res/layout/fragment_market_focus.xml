@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<com.example.test.util.FractionTranslateLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -9,13 +9,22 @@
         android:layout_height="match_parent"
         android:orientation="vertical" >
 
-        <ListView
-            android:id="@+id/lv_list_focus"
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/refreshLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-        </ListView>
+
+            <ListView
+                android:id="@+id/lv_list_focus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+
 
 
     </LinearLayout>
 
-</LinearLayout>
+</com.example.test.util.FractionTranslateLayout>

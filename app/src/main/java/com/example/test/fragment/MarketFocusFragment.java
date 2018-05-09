@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
-import com.example.test.Adapter.ListViewFocusAdapter;
+import com.example.test.Adapter.ListViewPriceAdapter;
 import com.example.test.R;
 
 /**
@@ -16,7 +16,7 @@ import com.example.test.R;
  */
 public class MarketFocusFragment extends Fragment {
 
-    private ListViewFocusAdapter focusAdapter;
+    private ListViewPriceAdapter priceAdapter;
     private ListView lv_list_focus;
 
     public MarketFocusFragment() {
@@ -31,8 +31,8 @@ public class MarketFocusFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_market_focus, container, false);
         initView(view);
 
-        focusAdapter = new ListViewFocusAdapter(getActivity(),null);
-        lv_list_focus.setAdapter(focusAdapter);
+        priceAdapter = new ListViewPriceAdapter(null,getActivity());
+        lv_list_focus.setAdapter(priceAdapter);
         return view;
     }
 

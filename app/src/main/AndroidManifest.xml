@@ -33,7 +33,9 @@
         <activity android:name=".Activity.BtnPublishActivity" />
         <activity android:name=".Activity.BtnAskActivity" />
         <activity android:name=".Activity.AderRegisterActivity" />
-        <activity android:name=".Activity.InfoMeActivity"></activity>
+        <activity android:name=".Activity.InfoMeActivity" />
+        <activity android:name=".Activity.InfoEditActivity" />
+        <activity android:name=".Activity.FirstMoreActivity"></activity>
     </application>
 
 </manifest>

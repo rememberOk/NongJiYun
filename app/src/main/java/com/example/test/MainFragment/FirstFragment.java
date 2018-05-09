@@ -11,8 +11,10 @@ import android.view.ViewGroup;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.RadioButton;
 
 import com.example.test.Activity.FirstMenuActivity;
+import com.example.test.Activity.FirstMoreActivity;
 import com.example.test.Adapter.GridViewAdapter;
 import com.example.test.Adapter.GridViewVideoAdapter;
 import com.example.test.Adapter.ListViewHeadAdapter;
@@ -25,14 +27,13 @@ import com.jude.rollviewpager.RollPagerView;
 import com.jude.rollviewpager.adapter.StaticPagerAdapter;
 import com.jude.rollviewpager.hintview.ColorPointHintView;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
-import com.scwang.smartrefresh.layout.listener.OnLoadmoreListener;
 import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
 import com.taobao.library.VerticalBannerView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class FirstFragment extends Fragment {
+public class FirstFragment extends Fragment implements View.OnClickListener {
     private GridView gv_menu;
     private MyGridView gv_first_video;
     private List<String> gridData;
@@ -42,6 +43,9 @@ public class FirstFragment extends Fragment {
     private ListView lv_list_head;
     private VerticalBannerView first_banner;
     private VerticalBannerAdapter bannerAdapter;
+    private RadioButton rb_head;
+    private RadioButton rb_dynamic;
+    private RadioButton rb_video;
 
     public FirstFragment() {
         // Required empty public constructor
@@ -164,6 +168,33 @@ public class FirstFragment extends Fragment {
         lv_list_head = view.findViewById(R.id.lv_list_head);
         gv_first_video = view.findViewById(R.id.gv_first_video);
         first_banner = view.findViewById(R.id.first_banner);
+        rb_head = view.findViewById(R.id.rb_head);
+        rb_head.setOnClickListener(this);
+        rb_dynamic = view.findViewById(R.id.rb_dynamic);
+        rb_dynamic.setOnClickListener(this);
+        rb_video = view.findViewById(R.id.rb_video);
+        rb_video.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.rb_head:
+                Intent intent = new Intent(getActivity(), FirstMoreActivity.class);
+                intent.putExtra("num",1);
+                startActivity(intent);
+                break;
+            case R.id.rb_dynamic:
+                Intent intentD = new Intent(getActivity(), FirstMoreActivity.class);
+                intentD.putExtra("num",2);
+                startActivity(intentD);
+                break;
+            case R.id.rb_video:
+                Intent intentV = new Intent(getActivity(), FirstMoreActivity.class);
+                intentV.putExtra("num",3);
+                startActivity(intentV);
+                break;
+        }
     }
 
     private class TestNormalAdapter extends StaticPagerAdapter {
@@ -183,6 +214,7 @@ public class FirstFragment extends Fragment {
             view.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
             return view;
         }
+
         @Override
         public int getCount() {
             return imgs.length;

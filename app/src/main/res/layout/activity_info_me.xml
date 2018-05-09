@@ -19,15 +19,33 @@
             android:background="@color/app_green"
             android:orientation="horizontal">
 
+            <ImageView
+                android:id="@+id/info_me_return"
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/btn_back_normal" />
+
             <TextView
-                style="@style/app_top_title"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="4"
                 android:layout_height="match_parent"
-                android:text="我的资料" />
+                android:gravity="center"
+                android:text="我的资料"
+                style="@style/app_top_title" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="保 存"
+                android:textSize="14sp"
+                style="@style/app_top_title" />
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/me_true_login"
+            android:id="@+id/info_img_head"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -40,7 +58,7 @@
                 android:paddingStart="15dp"
                 android:text="头像"
                 android:textColor="#000000"
-                android:textSize="18sp" />
+                android:textSize="16sp" />
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="0dp"
@@ -65,9 +83,10 @@
             android:background="@color/app_view" />
 
         <LinearLayout
-            android:id="@+id/me_sign"
+            android:id="@+id/info_username"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="0dp"
@@ -77,17 +96,399 @@
                 android:text="用户名"
                 android:paddingStart="15dp"
                 android:textColor="#000000"
-                android:textSize="18sp" />
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+               android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_weight="3"
+                android:paddingTop="5dp"
+                android:text="你好"
+                android:textSize="13sp" />
+            <RadioButton
+                android:id="@+id/rb_user"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.3"
+                android:button="@null"
+                android:drawableTop="@mipmap/btn_into_pressed" />
+        </LinearLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dip"
+            android:background="@color/app_view" />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dip"
+            android:background="@color/app_view" />
+        <LinearLayout
+            android:id="@+id/info_work"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="4"
+                android:text="单位名称"
+                android:paddingStart="15dp"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/work"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_weight="3"
+                android:paddingTop="5dp"
+                android:text="你好"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/rb_work"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.3"
+                android:button="@null"
+                android:drawableTop="@mipmap/btn_into_pressed" />
+        </LinearLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="5dip"
+            android:background="@color/app_view" />
+        <LinearLayout
+            android:id="@+id/info_identity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="4"
+                android:text="身份"
+                android:paddingStart="15dp"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/identity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_weight="3"
+                android:paddingTop="5dp"
+                android:text="你好"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/rb_identity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.3"
+                android:button="@null"
+                android:drawableTop="@mipmap/btn_into_pressed" />
+        </LinearLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dip"
+            android:background="@color/app_view" />
+
+        <LinearLayout
+            android:id="@+id/info_Education"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="4"
+                android:text="学历"
+                android:paddingStart="15dp"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/education"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_weight="3"
+                android:paddingTop="5dp"
+                android:text="你好"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/rb_education"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.3"
+                android:button="@null"
+                android:drawableTop="@mipmap/btn_into_pressed" />
+        </LinearLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dip"
+            android:background="@color/app_view" />
+
+        <LinearLayout
+            android:id="@+id/info_adress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="4"
+                android:text="地址"
+                android:paddingStart="15dp"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/adress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_weight="3"
+                android:paddingTop="5dp"
+                android:text="你好"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/rb_adr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.3"
+                android:button="@null"
+                android:drawableTop="@mipmap/btn_into_pressed" />
+        </LinearLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dip"
+            android:background="@color/app_view" />
+        <LinearLayout
+            android:id="@+id/info_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="4"
+                android:text="性别"
+                android:paddingStart="15dp"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/sex"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_weight="3"
+                android:paddingTop="5dp"
+                android:text="你好"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/rb_sex"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.3"
+                android:button="@null"
+                android:drawableTop="@mipmap/btn_into_pressed" />
+        </LinearLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="5dip"
+            android:background="@color/app_view" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="4"
+                android:text="手机号码"
+                android:paddingStart="15dp"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_weight="3"
+                android:paddingTop="5dp"
+                android:text="你好"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/rb_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.3"
+                android:button="@null"
+                android:drawableTop="@mipmap/btn_into_pressed" />
+        </LinearLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dip"
+            android:background="@color/app_view" />
+        <LinearLayout
+            android:id="@+id/info_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="4"
+                android:text="邮箱"
+                android:paddingStart="15dp"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_weight="3"
+                android:paddingTop="5dp"
+                android:text="你好"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/rb_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.3"
+                android:button="@null"
+                android:drawableTop="@mipmap/btn_into_pressed" />
+        </LinearLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dip"
+            android:background="@color/app_view" />
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e1e1e1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="4"
+                android:text="行业类别"
+                android:paddingStart="15dp"
+                android:textColor="#000000"
+                android:textSize="15sp" />
 
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
                 android:layout_marginStart="10dp"
                 android:layout_weight="1"
                 android:paddingTop="5dp"
-                android:text="你好"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.3"
+                android:button="@null" />
+        </LinearLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dip"
+            android:background="@color/app_view" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:text="行业类别1"
+                android:paddingStart="15dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:text="种养类别1"
+                android:paddingStart="15dp"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:text="1000-1200"
+                android:paddingStart="15dp"
                 android:textSize="14sp" />
 
             <RadioButton
@@ -99,7 +500,9 @@
                 android:button="@null"
                 android:drawableTop="@mipmap/btn_into_pressed" />
         </LinearLayout>
-
-
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dip"
+            android:background="@color/app_view" />
     </LinearLayout>
 </LinearLayout>

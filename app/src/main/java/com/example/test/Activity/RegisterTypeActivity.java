@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RadioButton;
@@ -26,8 +27,7 @@ public class RegisterTypeActivity extends AppCompatActivity implements View.OnCl
     private RadioButton type_household;
     private RadioButton type_other;
     private RadioGroup type_rg;
-    private String selectedType="";
-    private Context context;
+    private String selectedType = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,8 +93,8 @@ public class RegisterTypeActivity extends AppCompatActivity implements View.OnCl
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.type_back) {
-            if (selectedType == null) {
-                Toast.makeText(context,"请选择其中一项",Toast.LENGTH_LONG).show();
+            if (TextUtils.isEmpty(selectedType)) {
+                Toast.makeText(this,"请选择其中一项",Toast.LENGTH_LONG).show();
             } else {
                 Intent intent = new Intent();
                 intent.putExtra("type", selectedType);

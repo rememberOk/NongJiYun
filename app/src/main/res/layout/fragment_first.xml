@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.example.test.util.FractionTranslateLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ft_first"
@@ -25,7 +25,8 @@
                 android:layout_margin="8dp"
                 android:layout_weight="4"
                 android:background="@drawable/shape"
-                android:hint="@string/first_search" />
+                android:hint="@string/first_search"
+                android:textSize="14sp"/>
 
             <ImageView
                 android:layout_width="0dp"
@@ -96,15 +97,16 @@
                             android:padding="1dp"
                             android:text="头条"
                             android:textColor="@color/first_head"
-                            android:textSize="20dp" />
+                            android:textSize="18dp" />
 
                         <RadioButton
+                            android:id="@+id/rb_head"
                             android:layout_width="wrap_content"
                             android:layout_height="40dp"
                             android:button="@null"
                             android:text="更多 >>"
                             android:textColor="@color/text_black"
-                            android:textSize="18dp" />
+                            android:textSize="16dp" />
                     </LinearLayout>
 
                     <View
@@ -145,15 +147,16 @@
                             android:padding="1dp"
                             android:text="动态"
                             android:textColor="@color/app_green"
-                            android:textSize="20dp" />
+                            android:textSize="18dp" />
 
                         <RadioButton
+                            android:id="@+id/rb_dynamic"
                             android:layout_width="wrap_content"
                             android:layout_height="40dp"
                             android:button="@null"
                             android:text="更多 >>"
                             android:textColor="@color/text_black"
-                            android:textSize="18dp" />
+                            android:textSize="16dp" />
                     </LinearLayout>
 
                     <View
@@ -168,12 +171,12 @@
                         android:orientation="horizontal"
                         android:background="@color/app_text">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:paddingLeft="5dp"
-                            android:text="头条"
-                            android:textStyle="bold"/>
+                            android:padding="3dp"
+                            android:src="@mipmap/tag_tea"/>
 
                         <View
                             android:layout_width="1dp"
@@ -187,11 +190,9 @@
                             android:id="@+id/first_banner"
                             android:layout_width="wrap_content"
                             android:layout_height="36dp"
-                            app:animDuration="900"
+                            app:animDuration="1200"
                             app:gap="200"/>
                     </LinearLayout>
-
-
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
@@ -218,15 +219,16 @@
                             android:padding="1dp"
                             android:text="视频"
                             android:textColor="@color/first_video"
-                            android:textSize="20dp" />
+                            android:textSize="18dp" />
 
                         <RadioButton
+                            android:id="@+id/rb_video"
                             android:layout_width="wrap_content"
                             android:layout_height="40dp"
                             android:button="@null"
                             android:text="更多 >>"
                             android:textColor="@color/text_black"
-                            android:textSize="18dp" />
+                            android:textSize="16dp" />
                     </LinearLayout>
 
                     <View
@@ -246,4 +248,4 @@
             </android.support.v4.widget.NestedScrollView>
         </com.scwang.smartrefresh.layout.SmartRefreshLayout>
     </LinearLayout>
-</FrameLayout>
+</com.example.test.util.FractionTranslateLayout>

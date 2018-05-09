@@ -39,17 +39,25 @@ public class MarketFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_market, container, false);
         initView(view);
 
-        getFragmentManager().beginTransaction().replace(R.id.ft_market,
-                new MarketPriceFragment()).commit();
+        if (getFragmentManager() != null) {
+            getFragmentManager().beginTransaction().replace(R.id.ft_market,
+                    new MarketPriceFragment()).commit();
+        }
 
         rg_group_market.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (i == R.id.rb_price) {
-                    getFragmentManager().beginTransaction().replace(R.id.ft_market,
+                    getFragmentManager().beginTransaction().
+                    setCustomAnimations(
+                            R.animator.fragment_slide_left_in,
+                            R.animator.fragment_slide_right_out).replace(R.id.ft_market,
                             new MarketPriceFragment()).commit();
                 }else if (i == R.id.rb_focus) {
-                    getFragmentManager().beginTransaction().replace(R.id.ft_market,
+                    getFragmentManager().beginTransaction().
+                            setCustomAnimations(R.animator.slide_right_in,
+                                    R.animator.fragment_slide_left_out
+                                    ).replace(R.id.ft_market,
                             new MarketFocusFragment()).commit();
                 }
             }
