@@ -11,7 +11,6 @@
     <!-- TODO: Update blank fragment layout -->
 
     <LinearLayout
-        android:id="@+id/me_login"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -139,7 +138,6 @@
             android:layout_height="50dp">
 
             <LinearLayout
-                android:id="@+id/me_collect"
                 android:gravity="center"
                 android:orientation="horizontal"
                 app:layout_columnWeight="1"
@@ -154,6 +152,7 @@
                     android:paddingTop="3dp" />
 
                 <TextView
+                    android:id="@+id/me_collect"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
@@ -170,7 +169,6 @@
                 android:background="@color/app_view" />
 
             <LinearLayout
-                android:id="@+id/me_integral"
                 android:gravity="center"
                 android:orientation="horizontal"
                 app:layout_columnWeight="1"
@@ -185,6 +183,7 @@
                     android:paddingTop="3dp" />
 
                 <TextView
+                    android:id="@+id/me_integral"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
@@ -201,7 +200,6 @@
                 android:background="@color/app_view" />
 
             <LinearLayout
-                android:id="@+id/me_shop"
                 android:gravity="center"
                 android:orientation="horizontal"
                 app:layout_columnWeight="1"
@@ -216,6 +214,7 @@
                     android:paddingTop="3dp" />
 
                 <TextView
+                    android:id="@+id/me_shop"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
@@ -230,7 +229,7 @@
 
         <View
             android:layout_width="wrap_content"
-            android:layout_height="3dip"
+            android:layout_height="7dip"
             android:background="@color/app_view" />
 
         <LinearLayout
@@ -276,8 +275,135 @@
 
         <View
             android:layout_width="wrap_content"
-            android:layout_height="3dip"
+            android:layout_height="1dip"
             android:background="@color/app_view" />
+
+        <LinearLayout
+            android:id="@+id/me_ask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingStart="25dp"
+            android:paddingTop="10dp">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.1"
+                android:button="@null"
+                android:drawableStart="@mipmap/icon_personal_06"
+                android:paddingTop="5dp" />
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.4"
+                android:paddingTop="5dp"
+                android:text="我的问答"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:paddingTop="5dp"
+                android:button="@null"
+                android:text=">" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dip"
+            android:background="@color/app_view" />
+
+        <LinearLayout
+            android:id="@+id/me_exc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingStart="25dp"
+            android:paddingTop="10dp"
+            tools:ignore="RtlSymmetry">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.1"
+                android:button="@null"
+                android:drawableStart="@mipmap/icon_personal_07"
+                android:paddingTop="5dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.4"
+                android:paddingTop="5dp"
+                android:text="@string/me_exc"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:paddingTop="5dp"
+                android:button="@null"
+                android:text=">" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="5dip"
+            android:background="@color/app_view" />
+
+        <LinearLayout
+            android:id="@+id/me_think"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingStart="25dp"
+            android:paddingTop="10dp"
+            tools:ignore="RtlSymmetry">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.1"
+                android:button="@null"
+                android:drawableStart="@mipmap/icon_personal_01"
+                android:paddingTop="5dp" />
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.4"
+                android:paddingTop="5dp"
+                android:text="意见反馈"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:paddingTop="5dp"
+                android:button="@null"
+                android:text=">" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dip"
+            android:background="@color/app_view" />
+
 
         <LinearLayout
             android:id="@+id/me_setting"
@@ -297,7 +423,6 @@
                 android:paddingTop="5dp" />
 
             <TextView
-                style="@style/app_text"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -306,22 +431,21 @@
                 android:text="@string/me_setting"
                 android:textColor="#000000"
                 android:textSize="14sp" />
-
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.1"
                 android:paddingTop="5dp"
-                android:text="》" />
+                android:button="@null"
+                android:text=">" />
         </LinearLayout>
-
         <View
             android:layout_width="wrap_content"
-            android:layout_height="3dip"
+            android:layout_height="1dip"
             android:background="@color/app_view" />
 
         <LinearLayout
-            android:id="@+id/me_ask"
+            android:id="@+id/me_share"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="10dp"
@@ -334,17 +458,16 @@
                 android:layout_gravity="center_vertical"
                 android:layout_weight="0.1"
                 android:button="@null"
-                android:drawableStart="@mipmap/icon_personal_06"
+                android:drawableStart="@mipmap/icon_share"
                 android:paddingTop="5dp" />
 
             <TextView
-                style="@style/app_text"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1.4"
                 android:paddingTop="5dp"
-                android:text="@string/me_ask"
+                android:text="分享农技耘"
                 android:textColor="#000000"
                 android:textSize="14sp" />
 
@@ -353,54 +476,14 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.1"
                 android:paddingTop="5dp"
-                android:text="》" />
-        </LinearLayout>
-
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="3dip"
-            android:background="@color/app_view" />
-
-        <LinearLayout
-            android:id="@+id/me_answer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingBottom="10dp"
-            android:paddingStart="25dp"
-            android:paddingTop="10dp">
-
-            <RadioButton
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="0.1"
                 android:button="@null"
-                android:drawableStart="@mipmap/icon_personal_07"
-                android:paddingTop="5dp" />
-
-            <TextView
-                style="@style/app_text"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="1.4"
-                android:paddingTop="5dp"
-                android:text="@string/me_ans"
-                android:textColor="#000000"
-                android:textSize="14sp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.1"
-                android:paddingTop="5dp"
-                android:text="》" />
+                android:text=">" />
         </LinearLayout>
-
         <View
             android:layout_width="wrap_content"
-            android:layout_height="3dip"
+            android:layout_height="1dip"
             android:background="@color/app_view" />
+
     </LinearLayout>
 
 </com.example.test.util.FractionTranslateLayout>

@@ -19,16 +19,18 @@
             android:background="@color/app_green"
             android:orientation="horizontal">
 
-            <EditText
+            <Button
+                android:id="@+id/btn_first"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
                 android:layout_weight="4"
                 android:background="@drawable/shape"
                 android:hint="@string/first_search"
-                android:textSize="14sp"/>
+                android:textSize="14sp" />
 
             <ImageView
+                android:id="@+id/iv_notice"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -62,14 +64,67 @@
                         android:layout_width="match_parent"
                         android:layout_height="180dp"
                         app:rollviewpager_play_delay="30000" />
+                    <LinearLayout
+                        android:id="@+id/ll_home_weather"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/app_green"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:id="@+id/tv_weather_today"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:textColor="@color/app_text"
+                            android:gravity="center"
+                            android:textSize="14sp"
+                            android:text="2018-05-10"/>
 
+                        <TextView
+                            android:id="@+id/tv_weather_date"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/app_text"
+                            android:gravity="center"
+                            android:textSize="14sp"
+                            android:text="[廿五]"/>
+                        <TextView
+                            android:id="@+id/tv_weather_city"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/app_text"
+                            android:gravity="center"
+                            android:textSize="14sp"
+                            android:text="南京"/>
+                        <TextView
+                            android:id="@+id/tv_weather_temp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/app_text"
+                            android:gravity="center"
+                            android:textSize="14sp"
+                            android:text="23°"/>
+                        <TextView
+                            android:id="@+id/tv_weather_type"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/app_text"
+                            android:gravity="center"
+                            android:textSize="14sp"
+                            android:text="多云"/>
+
+                    </LinearLayout>
                     <com.example.test.util.MyGridView
                         android:id="@+id/gv_menu"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/app_text"
-                        android:numColumns="3">
-                    </com.example.test.util.MyGridView>
+                        android:numColumns="3"/>
 
                     <View
                         android:layout_width="match_parent"
@@ -81,7 +136,7 @@
                         android:layout_height="match_parent"
                         android:background="@color/app_text"
                         android:orientation="horizontal"
-                        android:padding="5dp">
+                        android:padding="3dp">
 
                         <ImageView
                             android:layout_width="35dp"
@@ -97,7 +152,7 @@
                             android:padding="1dp"
                             android:text="头条"
                             android:textColor="@color/first_head"
-                            android:textSize="18dp" />
+                            android:textSize="16dp" />
 
                         <RadioButton
                             android:id="@+id/rb_head"
@@ -106,7 +161,7 @@
                             android:button="@null"
                             android:text="更多 >>"
                             android:textColor="@color/text_black"
-                            android:textSize="16dp" />
+                            android:textSize="15dp" />
                     </LinearLayout>
 
                     <View
@@ -147,7 +202,7 @@
                             android:padding="1dp"
                             android:text="动态"
                             android:textColor="@color/app_green"
-                            android:textSize="18dp" />
+                            android:textSize="16dp" />
 
                         <RadioButton
                             android:id="@+id/rb_dynamic"
@@ -156,7 +211,7 @@
                             android:button="@null"
                             android:text="更多 >>"
                             android:textColor="@color/text_black"
-                            android:textSize="16dp" />
+                            android:textSize="15dp" />
                     </LinearLayout>
 
                     <View
@@ -167,32 +222,32 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="@color/app_text"
                         android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:background="@color/app_text">
+                        android:orientation="horizontal">
 
                         <ImageView
                             android:layout_width="30dp"
                             android:layout_height="30dp"
-                            android:paddingLeft="5dp"
                             android:padding="3dp"
-                            android:src="@mipmap/tag_tea"/>
+                            android:paddingLeft="5dp"
+                            android:src="@mipmap/tag_tea" />
 
                         <View
                             android:layout_width="1dp"
                             android:layout_height="40dp"
                             android:layout_marginLeft="5dp"
                             android:layout_marginRight="5dp"
-                            android:background="#cccccc"/>
+                            android:background="#cccccc" />
 
-                        <com.taobao.library.VerticalBannerView
-                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                        <com.taobao.library.VerticalBannerView xmlns:app="http://schemas.android.com/apk/res-auto"
                             android:id="@+id/first_banner"
                             android:layout_width="wrap_content"
                             android:layout_height="36dp"
                             app:animDuration="1200"
-                            app:gap="200"/>
+                            app:gap="200" />
                     </LinearLayout>
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
@@ -219,7 +274,7 @@
                             android:padding="1dp"
                             android:text="视频"
                             android:textColor="@color/first_video"
-                            android:textSize="18dp" />
+                            android:textSize="16sp" />
 
                         <RadioButton
                             android:id="@+id/rb_video"
@@ -228,22 +283,223 @@
                             android:button="@null"
                             android:text="更多 >>"
                             android:textColor="@color/text_black"
-                            android:textSize="16dp" />
+                            android:textSize="15dp" />
                     </LinearLayout>
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:background="@color/app_view" />
-
-                    <com.example.test.util.MyGridView
-                        android:id="@+id/gv_first_video"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/app_text"
-                        android:numColumns="2">
-                    </com.example.test.util.MyGridView>
+                        android:orientation="horizontal"
+                        android:padding="10dp">
 
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:id="@+id/iv_videoOne"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="100dp"
+                                            android:gravity="center_horizontal"
+                                            android:src="@drawable/test5" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:padding="5dp"
+                                            android:text="你就是小猪佩奇就是"
+                                            android:textColor="#000000"
+                                            android:textSize="15sp" />
+                                    </LinearLayout>
+                                </RelativeLayout>
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="100dp"
+                                    android:layout_weight="0.1"
+                                    android:gravity="center_horizontal" />
+
+                                <View
+                                    android:layout_width="1dip"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/app_view" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="100dp"
+                                    android:layout_weight="0.1"
+                                    android:gravity="center_horizontal" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:id="@+id/iv_videoTwo"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="100dp"
+                                            android:gravity="center_horizontal"
+                                            android:src="@drawable/test5" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:padding="5dp"
+                                            android:text="你就是小猪佩奇就是"
+                                            android:textColor="#000000"
+                                            android:textSize="15sp" />
+                                    </LinearLayout>
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dip"
+                        android:background="@color/app_view" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="100dp"
+                                            android:gravity="center_horizontal"
+                                            android:src="@drawable/test5" />
+
+                                        <TextView
+                                            android:id="@+id/iv_videoThree"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:padding="5dp"
+                                            android:text="你就是小猪佩奇就是"
+                                            android:textColor="#000000"
+                                            android:textSize="15sp" />
+                                    </LinearLayout>
+                                </RelativeLayout>
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="100dp"
+                                    android:layout_weight="0.1"
+                                    android:gravity="center_horizontal" />
+
+                                <View
+                                    android:layout_width="1dip"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/app_view" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="100dp"
+                                    android:layout_weight="0.1"
+                                    android:gravity="center_horizontal" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:id="@+id/iv_videoFour"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="100dp"
+                                            android:gravity="center_horizontal"
+                                            android:src="@drawable/test5" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:padding="5dp"
+                                            android:text="你就是小猪佩奇就是"
+                                            android:textColor="#000000"
+                                            android:textSize="15sp" />
+                                    </LinearLayout>
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="1dip"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/app_view" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
                 </LinearLayout>
             </android.support.v4.widget.NestedScrollView>
         </com.scwang.smartrefresh.layout.SmartRefreshLayout>

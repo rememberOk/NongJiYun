@@ -30,13 +30,14 @@
             android:gravity="center"
             android:text="我的资料" />
 
-        <TextView
+        <Button
             android:id="@+id/info_edit_true"
             style="@style/app_top_title"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.5"
             android:gravity="center"
+            android:background="@color/app_green"
             android:text="确定"
             android:textSize="14sp" />
     </LinearLayout>

@@ -18,8 +18,6 @@ import com.example.test.BrandFrgment.PesticideFragment;
 import com.example.test.BrandFrgment.SeedFragment;
 import com.example.test.BrandFrgment.SpecialFragment;
 import com.example.test.R;
-import com.scwang.smartrefresh.header.FlyRefreshHeader;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -70,7 +68,7 @@ public class BrandAgriculturalFragment extends Fragment {
     }
 
     private void initView(View view) {
-        tl_brand = (TabLayout) view.findViewById(R.id.tl_brand);
-        vp_brand = (ViewPager) view.findViewById(R.id.vp_brand);
+        tl_brand = view.findViewById(R.id.tl_brand);
+        vp_brand = view.findViewById(R.id.vp_brand);
     }
 }

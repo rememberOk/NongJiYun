@@ -1,5 +1,6 @@
 package com.example.test.Activity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -19,7 +20,7 @@ public class InfoMeActivity extends AppCompatActivity implements View.OnClickLis
     private TextView work;
     private TextView identity;
     private TextView education;
-    private TextView adress;
+    private TextView address;
     private TextView sex;
     private TextView phone;
     private TextView email;
@@ -43,7 +44,6 @@ public class InfoMeActivity extends AppCompatActivity implements View.OnClickLis
         LinearLayout info_adress = findViewById(R.id.info_adress);
         LinearLayout info_sex = findViewById(R.id.info_sex);
         LinearLayout info_email = findViewById(R.id.info_email);
-        LinearLayout me_login = findViewById(R.id.me_login);
         info_me_return.setOnClickListener(this);
         info_img_head.setOnClickListener(this);
         info_username.setOnClickListener(this);
@@ -53,7 +53,6 @@ public class InfoMeActivity extends AppCompatActivity implements View.OnClickLis
         info_adress.setOnClickListener(this);
         info_sex.setOnClickListener(this);
         info_email.setOnClickListener(this);
-        me_login.setOnClickListener(this);
         username = findViewById(R.id.username);
         username.setOnClickListener(this);
         work = findViewById(R.id.work);
@@ -62,8 +61,8 @@ public class InfoMeActivity extends AppCompatActivity implements View.OnClickLis
         identity.setOnClickListener(this);
         education = findViewById(R.id.education);
         education.setOnClickListener(this);
-        adress = findViewById(R.id.adress);
-        adress.setOnClickListener(this);
+        address = findViewById(R.id.address);
+        address.setOnClickListener(this);
         sex = findViewById(R.id.sex);
         sex.setOnClickListener(this);
         phone = findViewById(R.id.phone);
@@ -88,56 +87,45 @@ public class InfoMeActivity extends AppCompatActivity implements View.OnClickLis
         rb_email.setOnClickListener(this);
     }
 
+    @SuppressLint("CommitTransaction")
     @Override
     public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.info_me_return:
-                finish();
-            case R.id.info_edit_return:
-                finish();
-                break;
-            case R.id.rb_user:
-                Intent intentU = new Intent(getApplicationContext(), InfoEditActivity.class);
-                intentU.putExtra("num", 1);
-                startActivity(intentU);
-                break;
-            case R.id.info_username:
-                Intent intent = new Intent(getApplicationContext(), InfoEditActivity.class);
-                intent.putExtra("num", 1);
-                startActivity(intent);
-                break;
-            case R.id.info_work:
-                Intent intentW = new Intent(getApplicationContext(), InfoEditActivity.class);
-                intentW.putExtra("num", 2);
-                startActivity(intentW);
-                break;
-            case R.id.rb_work:
-                Intent intentK = new Intent(getApplicationContext(), InfoEditActivity.class);
-                intentK.putExtra("num", 2);
-                startActivity(intentK);
-                break;
-            case R.id.info_Education:
-                Intent intentE = new Intent(getApplicationContext(), InfoEditActivity.class);
-                intentE.putExtra("num", 3);
-                startActivity(intentE);
-                break;
-            case R.id.rb_education:
-                Intent intentD = new Intent(getApplicationContext(), InfoEditActivity.class);
-                intentD.putExtra("num", 3);
-                startActivity(intentD);
-                break;
-            case R.id.info_email:
-                Intent intentM = new Intent(getApplicationContext(), InfoEditActivity.class);
-                intentM.putExtra("num", 4);
-                startActivity(intentM);
-                break;
-            case R.id.rb_email:
-                Intent intentL = new Intent(getApplicationContext(), InfoEditActivity.class);
-                intentL.putExtra("num", 4);
-                startActivity(intentL);
-                break;
+        int v = view.getId();
+        if (v == R.id.info_me_return) {
+            finish();
+        } else if (v == R.id.rb_user || v == R.id.info_username) {
+            Intent intent = new Intent(getApplicationContext(), InfoEditActivity.class);
+            String text = username.getText().toString();
+            Bundle bundle = new Bundle();
+            bundle.putInt("num",1);
+            bundle.putString("text",text);
+            intent.putExtras(bundle);
+            startActivityForResult(intent,1);
+        } else if (v == R.id.info_work || v == R.id.rb_work ) {
+            Intent intent = new Intent(getApplicationContext(), InfoEditActivity.class);
+            String text = work.getText().toString();
+            Bundle bundle = new Bundle();
+            bundle.putInt("num",2);
+            bundle.putString("text",text);
+            intent.putExtras(bundle);
+            startActivityForResult(intent,2);
+        } else if (v == R.id.rb_education || v == R.id.info_Education ) {
+            Intent intent = new Intent(getApplicationContext(), InfoEditActivity.class);
+            String text = education.getText().toString();
+            Bundle bundle = new Bundle();
+            bundle.putInt("num",3);
+            bundle.putString("text",text);
+            intent.putExtras(bundle);
+            startActivityForResult(intent,3);
+        } else if (v == R.id.info_email || v == R.id.rb_email ) {
+            Intent intent = new Intent(getApplicationContext(), InfoEditActivity.class);
+            String text = email.getText().toString();
+            Bundle bundle = new Bundle();
+            bundle.putInt("num",4);
+            bundle.putString("text",text);
+            intent.putExtras(bundle);
+            startActivityForResult(intent,4);
         }
-
     }
 
     public void updateText() {
@@ -146,7 +134,7 @@ public class InfoMeActivity extends AppCompatActivity implements View.OnClickLis
         String workAdr = preferences.getString("work", "南京市栖霞区仙林大道");
         String identitySelf = preferences.getString("identity", "村民");
         String educationSelf = preferences.getString("education", "你好哇");
-        String adressSelf = preferences.getString("adress", "南京市");
+        String addressSelf = preferences.getString("adress", "南京市");
         String sexSelf = preferences.getString("sex", "男");
         String phoneNum = preferences.getString("phone", "11111111111");
         String emailNum = preferences.getString("email", "2357496648@qq.com");
@@ -154,9 +142,24 @@ public class InfoMeActivity extends AppCompatActivity implements View.OnClickLis
         work.setText(workAdr);
         identity.setText(identitySelf);
         education.setText(educationSelf);
-        adress.setText(adressSelf);
+        address.setText(addressSelf);
         sex.setText(sexSelf);
         phone.setText(phoneNum);
         email.setText(emailNum);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        String info = data.getStringExtra("info");
+        if (requestCode == 1 && resultCode == 1) {
+            username.setText(info);
+        } else if (requestCode == 2 && resultCode== 2) {
+            work.setText(info);
+        } else if (requestCode == 3 && resultCode== 3) {
+            education.setText(info);
+        } else if (requestCode == 4 & resultCode== 4) {
+            email.setText(info);
+        }
     }
 }

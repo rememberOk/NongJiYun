@@ -67,7 +67,7 @@ public class FirstMenuActivity extends AppCompatActivity {
                         new SpecialScienceFragment()).commit();
                 break;
             case 8:
-                tv_content_title.setText("农业合作");
+                tv_content_title.setText("专业合作");
                 getSupportFragmentManager().beginTransaction().replace(R.id.fl_menu_content,
                         new CooperationFragment()).commit();
                 break;

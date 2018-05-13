@@ -6,7 +6,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
+import com.example.test.Adapter.ListViewDynamicAdapter;
 import com.example.test.R;
 
 /**
@@ -14,6 +16,8 @@ import com.example.test.R;
  */
 public class MainDynamicFragment extends Fragment {
 
+    private ListViewDynamicAdapter dynamicAdapter;
+    private ListView lv_list;
 
     public MainDynamicFragment() {
         // Required empty public constructor
@@ -25,7 +29,13 @@ public class MainDynamicFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_main_dynamic, container, false);
+        initView(view);
+        dynamicAdapter = new ListViewDynamicAdapter(getActivity());
+        lv_list.setAdapter(dynamicAdapter);
         return view;
     }
 
+    private void initView(View view) {
+        lv_list = view.findViewById(R.id.lv_list);
+    }
 }

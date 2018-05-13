@@ -54,9 +54,6 @@ public class ListViewAdapter extends BaseAdapter {
         holder.iv_que_head_img.setImageResource(R.drawable.test2);
         holder.tv_que_self_addr.setText("南京市 浦口区");
         holder.tv_que_article.setText("鸡苗接种疫苗为什么会出现这红问题啊哈哈哈哈哈哈哈");
-        holder.iv_que_body_img1.setImageResource(R.drawable.test4);
-        holder.iv_que_body_img2.setImageResource(R.drawable.test4);
-        holder.iv_que_body_img3.setImageResource(R.drawable.test4);
         holder.tv_que_date.setText("2018-04-29 13:11");
 
         return view;

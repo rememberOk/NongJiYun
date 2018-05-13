@@ -2,16 +2,15 @@ package com.example.test.Activity;
 
 
 import android.os.Bundle;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.RadioGroup;
-
 import com.example.test.MainFragment.ExcFragment;
 import com.example.test.MainFragment.FirstFragment;
 import com.example.test.MainFragment.MeFragment;
 import com.example.test.MainFragment.QueFragment;
 import com.example.test.MainFragment.TtFragment;
 import com.example.test.R;
+import com.example.test.entity.User;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -53,9 +52,10 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-    }
 
+    }
     private void initView() {
         rg_bt_group = findViewById(R.id.rg_bt_group);
     }
+
 }

@@ -139,8 +139,7 @@
                 android:id="@+id/iv_que_body_img2"
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_height="130dp"
-                android:src="@drawable/test4" />
+                android:layout_height="130dp" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -152,7 +151,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="130dp"
-                android:src="@drawable/test4" />
+           />
         </LinearLayout>
 
         <View

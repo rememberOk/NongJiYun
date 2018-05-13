@@ -55,7 +55,6 @@ public class CooperationFragment extends Fragment {
         pagerAdapter = new ViewPagerAdapter(getFragmentManager(),fragments,titles);
         vp_brand.setAdapter(pagerAdapter);
         tl_brand.setupWithViewPager(vp_brand);
-
         return view;
     }
 

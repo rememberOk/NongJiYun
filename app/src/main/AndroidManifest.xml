@@ -35,7 +35,17 @@
         <activity android:name=".Activity.AderRegisterActivity" />
         <activity android:name=".Activity.InfoMeActivity" />
         <activity android:name=".Activity.InfoEditActivity" />
-        <activity android:name=".Activity.FirstMoreActivity"></activity>
+        <activity android:name=".Activity.FirstMoreActivity" />
+        <activity android:name=".Activity.MeCollectActivity" />
+        <activity android:name=".Activity.AskAnsActivity" />
+        <activity android:name=".Activity.MeFunctionActivity" />
+        <activity android:name=".Activity.NoticeActivity" />
+        <activity android:name=".Activity.VerificationActivity" />
+        <activity
+            android:name=".Activity.VideoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activity.WeatherActivity" />
     </application>
 
 </manifest>

@@ -37,4 +37,8 @@ dependencies {
     implementation 'com.android.support:gridlayout-v7:27.1.1'
     implementation 'com.github.Rowandjj:VerticalBannerView:1.0'
     implementation 'com.android.support:design:27.1.1'
+    implementation 'cn.jzvd:jiaozivideoplayer:6.2.9'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation files('libs/okhttputils-2_6_2.jar')
 }
