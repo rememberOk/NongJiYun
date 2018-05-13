@@ -111,7 +111,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                                     Toast.makeText(LoginActivity.this, "登录成功", Toast.LENGTH_SHORT).show();
                                     JSONObject object = jsonObject.getJSONObject("data");
                                     User user = new Gson().fromJson(object.toString(),User.class);
-                                    @SuppressLint("CommitPrefEdits")
                                     SharedPreferences.Editor editor = getSharedPreferences("nongjiyun", MODE_PRIVATE).edit();
                                     editor.putString("user_name",user.getUser_name());
                                     editor.putString("user_account",user.getUser_account());
@@ -121,6 +120,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                                     editor.putString("education",user.getEducation());
                                     editor.putString("email",user.getEmail());
                                     editor.putInt("identity_id",user.getIdentity_id());
+                                    editor.putBoolean("isLogin",true);
                                     editor.apply();
                                     break;
                                 case 1003:

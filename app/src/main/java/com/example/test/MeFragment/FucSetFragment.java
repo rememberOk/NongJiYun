@@ -38,8 +38,8 @@ public class FucSetFragment extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.bt_exit:
-                SharedPreferences.Editor editor = getActivity().getSharedPreferences("nongjiyun", MODE_PRIVATE).edit();
-                editor.clear();
+                SharedPreferences.Editor editor = getActivity().getSharedPreferences("nongjiyun", MODE_PRIVATE).edit();                getActivity().finish();
+                editor.putBoolean("isLogin",false);
                 editor.apply();
                 getActivity().finish();
             break;

@@ -1,5 +1,6 @@
 package com.example.test.MainFragment;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -31,27 +32,17 @@ public class MeFragment extends Fragment implements View.OnClickListener {
     private TextView me_name;
     private LinearLayout me_true_login;
     private LinearLayout me_no_login;
+    private SharedPreferences preferences;
 
     public MeFragment() {
         // Required empty public constructor
     }
-
-
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_me, container, false);
         initView(view);
-        SharedPreferences preferences= getActivity().getSharedPreferences("nongjiyun", MODE_PRIVATE);
-        String name = preferences.getString("user_name", "");
-
-        if (TextUtils.isEmpty(name)) {
-            me_true_login.setVisibility(View.GONE);
-        } else {
-            me_no_login.setVisibility(View.GONE);
-            me_name.setText(name);
-        }
         return view;
     }
 
@@ -114,5 +105,24 @@ public class MeFragment extends Fragment implements View.OnClickListener {
                 startActivity(intent);
                 break;
         }
+    }
+    @Override
+    public void onResume() {
+        super.onResume();
+        String name = preferences.getString("user_name","");
+        boolean isLogin = preferences.getBoolean("isLogin",false);
+        if (isLogin) {
+            me_no_login.setVisibility(View.GONE);
+            me_true_login.setVisibility(View.VISIBLE);
+            me_name.setText(name);
+        } else {
+            me_true_login.setVisibility(View.GONE);
+            me_no_login.setVisibility(View.VISIBLE);
+        }
+    }
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        preferences = context.getSharedPreferences("nongjiyun", MODE_PRIVATE);
     }
 }
